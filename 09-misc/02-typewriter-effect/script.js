@@ -11,17 +11,20 @@
 
 (function() {
 
- let i = 0 
+ let i = 0
 
- let txt =  "Je suis un texte qui va apparaître dans un effet \"machine à écrire\", un peu comme dans\ les films noirs. Sauf que... je ne sais pas qui est l\'assassin ! Y en a-t-il vraiment un \? Habite-t-il au 21 \? Que de mystères !"
+
  let speed = 50;
+
+ let txt = document.getElementById("target").value.length;
+
 
 
  function typeWriter() {
 
-    if (i < txt.length){
+    
+    if (i < txt){
 
-     
         
         document.getElementById("target").innerHTML+=txt.charAt(i);
         i++;
