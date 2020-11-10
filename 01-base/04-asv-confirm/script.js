@@ -9,29 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
 (function() {
+    let age 
+    let town
+    let gender
+  do{ 
+    age = prompt ('How old are you ? ')
+    gender = prompt (' Are you a boy or a girl ?')
+    town = prompt (' Where live you ? ')
+  
+  } while ( age == "" || age == null  && gender == "" || gender == null && town == "" || town == null)
 
-    let Age = prompt("How old are you ?");
-    let Gender = prompt("Are you a boy or a girl ?");
-    let Town  = prompt("Where live you ? ");
-    
-    let Cancel
-    let OK=confirm("You are "+Age+" "+" years old " + "You are a "+Gender+" You live in "+ Town);
-    if (OK==true) {
-
-        alert("OK GOOD JOB")
-    }
-    else {
-        let Age = prompt("How old are you ?");
-    let Gender = prompt("Are you a boy or a girl ?");
-    let Town  = prompt("Where live you ? ");
-    
-    let Cancel
-    let OK=confirm("You are "+Age+" "+" years old " + "You are a "+Gender+" You live in "+ Town);
-    }
-
-    
-
-    // your code here
+  alert("You are " + age + " years old." + " You are a " + gender + " You lives in " + town);
 
 })();
